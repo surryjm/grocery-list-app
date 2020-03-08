@@ -1,3 +1,39 @@
+.container {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  justify-content: center;
+  padding: 10%;
+}
+
+h1 {
+  text-align: center;
+}
+
+#txtSearch {
+  width: 30em;
+}
+
+.form-control {
+  padding: 20px;
+  height: 50px;
+}
+
+li {
+  padding: 10px 20px 10px 20px;
+  height: 50px;
+}
+
+.list-group-item {
+  padding: 10px 20px 10px 20px;
+}
+
+.row-items > span {
+  padding: 0px 20px 0px 20px;
+}
+
 .material-icons {
+  float: right;
   cursor: pointer;
 }
