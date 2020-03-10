@@ -8,21 +8,48 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GroceryListComponent implements OnInit {
   
-  task: string;
+  task = {
+    name: '',
+    id: 0
+  };
   tasks = [];
 
   //Add task
   onClick() {
-   this.tasks.push({name: this.task});
-    this.task = '';
+   if(this.task.id == 0){
+     this.tasks.push({id: (new Date()).getTime(),name: this.task.name, strike: false});
+   }
+   this.task = {
+     name: '',
+     id: 0
+   };
   }
 
+  //Edit task
+  onEdit(item){
+    this.task = item;
+  }
 
   //Delete task
   deleteTask(task){
     for(let i=0; i<= this.tasks.length; i++){
       if(task==this.tasks[i]){
         this.tasks.splice(i,1)
+      }
+    }
+  }
+
+  //Strikethrough task
+  onStrike(item){
+    for(var i = 0; i < this.tasks.length; i++){
+      if(item.id == this.tasks[i].id){
+        if(this.tasks[i].strike){
+          this.tasks[i].strike = false;
+        }
+        else{
+          this.tasks[i].strike = true;
+        }
+        break;
       }
     }
   }
