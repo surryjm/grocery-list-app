@@ -1,5 +1,16 @@
+/* Background image: https://source.unsplash.com/ */
+
+body {
+  background-image: url("https://source.unsplash.com/sDbj1dFlFPU/1600x900");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
 .container {
   font-family: "Roboto", Helvetica, Arial, Helvetica, sans-serif;
+  font-size: 1em;
   position: relative;
   display: grid;
   grid-template-columns: auto;
@@ -10,12 +21,16 @@
 
 h1 {
   text-align: center;
-  margin-bottom: 15px;
-  font-size: 3em;
+  margin-bottom: 25px;
+  font-size: 4em;
 }
 
 #txtSearch {
-  width: 30em;
+  width: 25em;
+}
+
+input {
+  font-size: 20px;
 }
 
 .form-control {
@@ -23,9 +38,21 @@ h1 {
   height: 50px;
 }
 
+.material-icons {
+  float: right;
+  cursor: pointer;
+  color: #393939;
+  display: none;
+}
+
 li {
-  height: 50px;
-  margin: 1em auto;
+  height: 55px;
+  margin: .5em auto;
+  font-size: 20px;
+}
+
+li:hover .material-icons{
+  display: inline-block;
 }
 
 .list-group-item {
@@ -34,12 +61,11 @@ li {
 
 .row-items > span {
   padding: 0px 20px 0px 20px;
-  font-size: .85em;
+  font-size: .9em;
 }
 
-.material-icons {
-  float: right;
-  cursor: pointer;
+.delete {
+  padding-left: 15px;
 }
 
 .strike{
