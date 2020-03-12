@@ -1,1 +1,13 @@
+/* Background image: https://source.unsplash.com/ 
+https://source.unsplash.com/sDbj1dFlFPU/1600x900
+*/
 
+/* Photo by Brooke Lark on Unsplash */
+
+body {
+  background: url(https://source.unsplash.com/08bOYnH_r_E/3997×3171);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}

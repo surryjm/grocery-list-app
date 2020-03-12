@@ -1,13 +1,3 @@
-/* Background image: https://source.unsplash.com/ */
-
-body {
-  background-image: url("https://source.unsplash.com/sDbj1dFlFPU/1600x900");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
-}
-
 .container {
   font-family: "Roboto", Helvetica, Arial, Helvetica, sans-serif;
   font-size: 1em;
@@ -26,7 +16,8 @@ h1 {
 }
 
 #txtSearch {
-  width: 25em;
+  width: 30em;
+  word-wrap: break-word;
 }
 
 input {
@@ -38,17 +29,34 @@ input {
   height: 50px;
 }
 
+li {
+  display: grid;
+  grid-template-columns: auto 5em;
+  grid-template-rows: auto;
+  grid-column-gap: 10px;
+  grid-template-areas:
+    'task-name icons';
+  width: 30em;
+  min-height: 55px;
+  margin: .5em auto;
+  font-size: 20px;
+  word-wrap: break-word;
+}
+
+.task-name {
+  grid-area: task-name;
+}
+
+.icons {
+  grid-area: icons;
+}
+
 .material-icons {
   float: right;
   cursor: pointer;
   color: #393939;
   display: none;
-}
-
-li {
-  height: 55px;
-  margin: .5em auto;
-  font-size: 20px;
+  position: relative;
 }
 
 li:hover .material-icons{
@@ -68,6 +76,29 @@ li:hover .material-icons{
   padding-left: 15px;
 }
 
+.edit {
+  padding-left: 15px;
+}
+
 .strike{
   text-decoration: line-through;
+}
+
+@media (max-width: 640px) {
+  h1 {
+    font-size: 3em;
+  }
+  input {
+    font-size: 16px;
+  }
+  #txtSearch {
+    width: 25em;
+  }
+  li {
+    width: 25em;
+    min-height: 55px;
+    margin: .5em auto;
+    font-size: 16px;
+  }
+
 }
