@@ -6,7 +6,10 @@
   grid-template-columns: auto;
   grid-template-rows: auto;
   justify-content: center;
-  padding: 10%;
+  padding: 5% 2% 5% 2%;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 0.60rem;
+  margin-top: 3%;
 }
 
 h1 {

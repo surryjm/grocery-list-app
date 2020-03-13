@@ -1,13 +1,17 @@
 /* Background image: https://source.unsplash.com/ 
 https://source.unsplash.com/sDbj1dFlFPU/1600x900
+https://source.unsplash.com/08bOYnH_r_E/3997×3171
 */
 
 /* Photo by Brooke Lark on Unsplash */
 
 body {
-  background: url(https://source.unsplash.com/08bOYnH_r_E/3997×3171);
-  background-size: cover;
-  background-position: center;
+  background: url(src\assets\images\table-on-wooden-plank-326279.jpg);
+  background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
