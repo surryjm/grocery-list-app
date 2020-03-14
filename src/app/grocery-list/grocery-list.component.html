@@ -20,7 +20,7 @@
   <li *ngFor="let task of tasks" class="list-group-item">
     
     <span (click)="onStrike(task)" [ngClass]="{'strike': task.strike}" class="task-name">{{task.name}}</span>
-    <span class="icons"><i (click)="deleteTask(task)" class="material-icons delete" title="delete">delete</i>
+    <span class="icons"><i (click)="deleteTask(task)" class="material-icons delete" title="delete">clear</i>
     <i (click)="onEdit(task)" class="material-icons edit" title="edit">edit</i></span>
     
     
